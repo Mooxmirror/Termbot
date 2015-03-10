@@ -1,0 +1,9 @@
+while not mark on
+	while stone front
+		rotate left
+	end
+	if not stone right
+		rotate right
+	end
+	move
+end
