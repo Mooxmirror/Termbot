@@ -1,4 +1,4 @@
-#include "Point.h"
+#include "Point.hpp"
 
 // New point with the specific x and y coordinates
 Point::Point(int x, int y)

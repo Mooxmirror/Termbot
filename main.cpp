@@ -23,8 +23,11 @@ Negate condition using 'not'
 #include <iostream>
 #include <string>
 #include <vector>
+#include <fstream>
+#include <chrono>
+#include <thread>
 
-#include "RuntimeEnvironment.h"
+#include "RuntimeEnvironment.hpp"
 
 int main()
 {
@@ -37,7 +40,7 @@ int main()
 	std::string lab_path; std::getline(std::cin, lab_path);
 
 	Laboratory my_lab(lab_path);
-	Bot my_bot(Point(4, 0), 0, my_lab);
+	Bot my_bot(Point(2, 0), 0, my_lab);
 
 	my_bot.load_from_file(bot_path);
 

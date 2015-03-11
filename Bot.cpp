@@ -1,4 +1,4 @@
-#include "Bot.h"
+#include "Bot.hpp"
 
 // Creates a new bot at the point, with the specified facing direction and the working laboratory
 Bot::Bot(Point position, int direction, Laboratory& lab)
@@ -8,16 +8,17 @@ Bot::Bot(Point position, int direction, Laboratory& lab)
 	m_lab = lab;
 }
 
+/*
 // Creates a new bot at the specified position in a laboratory that does fit
 Bot::Bot(Point position)
 {
 	Bot(position, 0, Laboratory(position.x + 1, position.y + 1));
 }
-
+*/
 // Creates a new bot in an empty laboratory
 Bot::Bot()
 {
-	Bot(Point(0, 0));
+	
 }
 
 // Working laboratory of the bot

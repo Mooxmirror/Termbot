@@ -1,4 +1,4 @@
-#include "Tile.h"
+#include "Tile.hpp"
 
 // New tile with specified type
 Tile::Tile(std::string type)

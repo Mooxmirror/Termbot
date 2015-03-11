@@ -1,9 +1,10 @@
 while not mark on
-	while stone front
+	if not stone left
 		rotate left
 	end
-	if not stone right
+	while stone front
 		rotate right
 	end
+	mark set
 	move
 end

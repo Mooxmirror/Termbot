@@ -1,4 +1,4 @@
-#include "Laboratory.h"
+#include "Laboratory.hpp"
 
 // Initializes a new lab from a specific file
 Laboratory::Laboratory(std::string& file)
@@ -142,7 +142,7 @@ auto Laboratory::loadFromFile(std::string& file) -> void
 
 	if (!lab_file.is_open())
 	{
-		throw std::exception("Failed to open lab file");
+		throw std::exception();
 	}
 
 	std::string current_line;
