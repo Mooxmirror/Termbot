@@ -26,3 +26,6 @@ RuntimeEnvironment.o:
 	
 Tile.o:
 	$(CC) $(CARGS) src/Tile.cpp -o Tile.o
+	
+clean:
+	rm *.o termbot
